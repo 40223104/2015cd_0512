@@ -1775,15 +1775,31 @@ def index(self, N=20 ,N1=20 , M=4, P=20,midx=400):
 &lt;!-- 啟動 brython() --&gt;
 &lt;body onload="brython()"&gt;
     
+&lt;h1&gt;cda_g2 課程練習&lt;/h1&gt;
+&lt;h2&gt;組員名單&lt;/h2&gt;
+&lt;table  style="border:3px #00D600 double;padding:5px;" rules="all" cellpadding='5';&gt;
+&lt;tr&gt;&lt;td&gt;組長&lt;/td&gt;&lt;td&gt;學號&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;陳柏安&lt;/td&gt;&lt;td&gt;40223131&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;組員&lt;/td&gt;&lt;td&gt;學號&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;吳佳容&lt;/td&gt;&lt;td&gt;40223102&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;林瑩禎&lt;/td&gt;&lt;td&gt;40223104&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;侯云婷&lt;/td&gt;&lt;td&gt;40223105&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;許芸瑄&lt;/td&gt;&lt;td&gt;40223106&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;黃雯琦&lt;/td&gt;&lt;td&gt;40223107&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;陳儀芳&lt;/td&gt;&lt;td&gt;40023107&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;/form&gt;
+&lt;hr&gt;
+
 &lt;h1&gt;cda_g2_w11 練習&lt;/h1&gt;
-&lt;h2&gt;班級:四設計二甲    學號:40223104    姓名:林瑩禎&lt;/h2&gt;
-
 &lt;form method=POST action=index&gt;
-
 &lt;a href="spur"&gt;spur&lt;/a&gt;&lt;br /&gt;
 &lt;a href="drawspur"&gt;drawspur&lt;/a&gt;&lt;br /&gt;
 &lt;a href="fileuploadform"&gt;上傳檔案&lt;/a&gt;&lt;br /&gt;
 &lt;a href="download_list"&gt;列出上傳檔案&lt;/a&gt;&lt;br /&gt;
+
+
 
 
 
@@ -1848,11 +1864,25 @@ def spur(self, N=20 , M=5, P=15):
 &lt;!-- 啟動 brython() --&gt;
 &lt;body onload="brython()"&gt;
 
-
+&lt;h1&gt;cda_g2_w11 練習&lt;/h1&gt;
 &lt;form method=POST action=spuraction&gt;
-齒數:&lt;input type=text name=N&gt;&lt;br /&gt;
-模數:&lt;input type=text name=M&gt;&lt;br /&gt;
-壓力角:&lt;input type=text name=P&gt;&lt;br /&gt;
+齒數:&lt;select name"select_one&gt;
+&lt;option value="1"&gt;20&lt;/option&gt;
+&lt;option value="2"&gt;25&lt;/option&gt;
+&lt;option value="3"&gt;30&lt;/option&gt;
+&lt;option value="4"&gt;35&lt;/option&gt;
+&lt;option value="5"&gt;40&lt;/option&gt;
+&lt;option value="6"&gt;35&lt;/option&gt;
+&lt;/select&gt;&lt;br /&gt;
+模數:&lt;select name"select_two&gt;
+&lt;option value="1"&gt;5&lt;/option&gt;
+&lt;option value="2"&gt;10&lt;/option&gt;
+&lt;option value="3"&gt;15&lt;/option&gt;
+&lt;/select&gt;&lt;br /&gt;
+壓力角:&lt;select name"select_three&gt;
+&lt;option value="1"&gt;15&lt;/option&gt;
+&lt;option value="2"&gt;20&lt;/option&gt;
+&lt;/select&gt;&lt;br /&gt;
 &lt;input type=submit value=send&gt;
 
 &lt;/form&gt;
@@ -1913,8 +1943,7 @@ def drawspur(self, N=20, N1=10, N2=30, N3=10, N4=20, N5=30, N6=30,M=5, P=15):
 壓力角:&lt;input type=text name=P&gt;&lt;br /&gt;
 &lt;input type=submit value=send&gt;
 
-&lt;/form&gt;
-&lt;hr&gt;
+
 
 '''
 

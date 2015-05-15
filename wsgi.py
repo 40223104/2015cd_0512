@@ -112,15 +112,31 @@ class Midterm(object):
     <!-- 啟動 brython() -->
     <body onload="brython()">
         
+    <h1>cda_g2 課程練習</h1>
+    <h2>組員名單</h2>
+    <table  style="border:3px #00D600 double;padding:5px;" rules="all" cellpadding='5';>
+    <tr><td>組長</td><td>學號</td></tr>
+    <tr><td>陳柏安</td><td>40223131</td></tr>
+    <tr><td>組員</td><td>學號</td></tr>
+    <tr><td>吳佳容</td><td>40223102</td></tr>
+    <tr><td>林瑩禎</td><td>40223104</td></tr>
+    <tr><td>侯云婷</td><td>40223105</td></tr>
+    <tr><td>許芸瑄</td><td>40223106</td></tr>
+    <tr><td>黃雯琦</td><td>40223107</td></tr>
+    <tr><td>陳儀芳</td><td>40023107</td></tr>
+    </table>
+
+    </form>
+    <hr>
+
     <h1>cda_g2_w11 練習</h1>
-    <h2>班級:四設計二甲    學號:40223104    姓名:林瑩禎</h2>
-
     <form method=POST action=index>
-
     <a href="spur">spur</a><br />
     <a href="drawspur">drawspur</a><br />
     <a href="fileuploadform">上傳檔案</a><br />
     <a href="download_list">列出上傳檔案</a><br />
+
+
 
 
 
@@ -146,11 +162,25 @@ class Midterm(object):
     <!-- 啟動 brython() -->
     <body onload="brython()">
 
-
+    <h1>cda_g2_w11 練習</h1>
     <form method=POST action=spuraction>
-    齒數:<input type=text name=N><br />
-    模數:<input type=text name=M><br />
-    壓力角:<input type=text name=P><br />
+    齒數:<select name"select_one>
+    <option value="1">20</option>
+    <option value="2">25</option>
+    <option value="3">30</option>
+    <option value="4">35</option>
+    <option value="5">40</option>
+    <option value="6">35</option>
+    </select><br />
+    模數:<select name"select_two>
+    <option value="1">5</option>
+    <option value="2">10</option>
+    <option value="3">15</option>
+    </select><br />
+    壓力角:<select name"select_three>
+    <option value="1">15</option>
+    <option value="2">20</option>
+    </select><br />
     <input type=submit value=send>
 
     </form>
@@ -209,8 +239,7 @@ class Midterm(object):
     壓力角:<input type=text name=P><br />
     <input type=submit value=send>
 
-    </form>
-    <hr>
+
 
     '''
 
