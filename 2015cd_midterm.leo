@@ -1777,10 +1777,21 @@ def index(self, N=20 ,N1=20 , M=4, P=20,midx=400):
     
 &lt;h1&gt;cda_g2 課程練習&lt;/h1&gt;
 &lt;h2&gt;組員名單&lt;/h2&gt;
-&lt;table  style="border:3px #00D600 double;padding:5px;" rules="all" cellpadding='5';&gt;
-&lt;tr&gt;&lt;td&gt;組長&lt;/td&gt;&lt;td&gt;學號&lt;/td&gt;&lt;/tr&gt;
+
+&lt;table style="border:7px #008F00 double;" rules="all" cellpadding='7';&gt;
+&lt;!-- "border:7px" 表示表格邊框粗細 --&gt;
+&lt;!-- "#008F00"  表示表格邊框顏色  --&gt;
+&lt;!--  色碼表 http://www.wibibi.com/info.php?tid=372 --&gt;
+
+&lt;tr&gt;
+&lt;td style='' align='center' valign="middle"&gt;組長&lt;/td&gt;
+&lt;td style='' align='center' valign="middle"&gt;學號&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;陳柏安&lt;/td&gt;&lt;td&gt;40223131&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;組員&lt;/td&gt;&lt;td&gt;學號&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style='' align='center' valign="middle"&gt;組員&lt;/td&gt;
+&lt;td style='' align='center' valign="middle"&gt;學號&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;吳佳容&lt;/td&gt;&lt;td&gt;40223102&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;林瑩禎&lt;/td&gt;&lt;td&gt;40223104&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;侯云婷&lt;/td&gt;&lt;td&gt;40223105&lt;/td&gt;&lt;/tr&gt;
@@ -1788,9 +1799,8 @@ def index(self, N=20 ,N1=20 , M=4, P=20,midx=400):
 &lt;tr&gt;&lt;td&gt;黃雯琦&lt;/td&gt;&lt;td&gt;40223107&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;陳儀芳&lt;/td&gt;&lt;td&gt;40023107&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;
+&lt;!--  align='center' 為水平置中 ，valign="middle" 為垂直置中 --&gt;
 
-&lt;/form&gt;
-&lt;hr&gt;
 
 &lt;h1&gt;cda_g2_w11 練習&lt;/h1&gt;
 &lt;form method=POST action=index&gt;
@@ -1798,14 +1808,6 @@ def index(self, N=20 ,N1=20 , M=4, P=20,midx=400):
 &lt;a href="drawspur"&gt;drawspur&lt;/a&gt;&lt;br /&gt;
 &lt;a href="fileuploadform"&gt;上傳檔案&lt;/a&gt;&lt;br /&gt;
 &lt;a href="download_list"&gt;列出上傳檔案&lt;/a&gt;&lt;br /&gt;
-
-
-
-
-
-
-
-
 
 '''
     return outstring
