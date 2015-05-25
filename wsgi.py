@@ -15,7 +15,8 @@ import math
 from cherrypy.lib.static import serve_file
 # 導入 gear 模組
 #import gear
-
+import man
+import man2
 ################# (2) 廣域變數設定區
 # 確定程式檔案所在目錄, 在 Windows 下有最後的反斜線
 _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
@@ -111,11 +112,10 @@ class Midterm(object):
     </head>
     <!-- 啟動 brython() -->
     <body onload="brython()">
-        
-    <h1>cda_g2 課程練習</h1>
-    <h2>組員名單</h2>
-
-    <table style="border:7px #008F00 double;" rules="all" cellpadding='7';>
+    <font size="6" font color="#00A800" font face="微軟正黑體">cda_g2 課程練習</font><br>
+    <br>
+    <font size="4" font face="微軟正黑體"><b>組員名單</b></font><br>
+    <table style="border:5px #008F00 solid;" rules="all" cellpadding='7';>
     <!-- "border:7px" 表示表格邊框粗細 -->
     <!-- "#008F00"  表示表格邊框顏色  -->
     <!--  色碼表 http://www.wibibi.com/info.php?tid=372 -->
@@ -137,14 +137,25 @@ class Midterm(object):
     <tr><td>陳儀芳</td><td>40023107</td></tr>
     </table>
     <!--  align='center' 為水平置中 ，valign="middle" 為垂直置中 -->
+    <br />
 
+    <font size="4" font face="微軟正黑體"><b>40223104 林瑩禎 課程練習</b></font><br>
+    <a href="https://github.com/40223104/2015cd_0512" title="github">github</a><br>
+    <a href="https://www.gitbook.com/book/40223131/2015cdag2_0421/edit#/edit/master/SUMMARY.md" title="gitbook">gitbook</a><br>
+    <br />
 
-    <h1>cda_g2_w11 練習</h1>
+    <font size="4" font face="微軟正黑體"><b>cda_g2_w11 練習</b></font><br>
     <form method=POST action=index>
     <a href="spur">spur</a><br />
     <a href="drawspur">drawspur</a><br />
     <a href="fileuploadform">上傳檔案</a><br />
     <a href="download_list">列出上傳檔案</a><br />
+    <br />
+
+    <font size="4"font face="微軟正黑體"><b>cda_g2_w12 練習</b></font><br>
+    <form method=POST action=index>
+    <a href="man">man</a><br />
+    <a href="man2">man2</a><br />
 
     '''
         return outstring
@@ -166,27 +177,26 @@ class Midterm(object):
 
     <h1>cda_g2_w11 練習</h1>
     <form method=POST action=spuraction>
-    齒數:<select name"select_one>
-    <option value="1">20</option>
-    <option value="2">25</option>
-    <option value="3">30</option>
-    <option value="4">35</option>
-    <option value="5">40</option>
-    <option value="6">35</option>
+    齒數:<select name = "N">
+    <option value="20">20</option>
+    <option value="25">25</option>
+    <option value="30">30</option>
+    <option value="35">35</option>
+    <option value="40">40</option>
+    <option value="45">45</option>
     </select><br />
-    模數:<select name"select_two>
-    <option value="1">5</option>
-    <option value="2">10</option>
-    <option value="3">15</option>
+    模數:<select name = "M">
+    <option value="5">5</option>
+    <option value="10">10</option>
+    <option value="15">15</option>
     </select><br />
-    壓力角:<select name"select_three>
-    <option value="1">15</option>
-    <option value="2">20</option>
+    壓力角:<select name = "P">
+    <option value="15">15</option>
+    <option value="20">20</option>
     </select><br />
     <input type=submit value=send>
 
-    </form>
-    <hr>
+
 
     '''
 
@@ -210,6 +220,7 @@ class Midterm(object):
     齒數:'''+str(N)+'''<output name=N for=str(N)><br />
     模數:'''+str(M)+'''<output name=M for=str(M)><br />
     壓力角:'''+str(P)+'''<output name=P for=str(P)><br />
+
     '''
 
         return outstring
@@ -752,6 +763,8 @@ application_conf = {'/static':{
     
 root = Midterm()
 root.download = Download()
+root.man = man.MAN()
+root.man2 = man2.MAN()
 #root.gear = gear.Gear()
 
 if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
