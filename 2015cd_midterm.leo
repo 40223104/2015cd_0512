@@ -1806,12 +1806,12 @@ def index(self, N=20 ,N1=20 , M=4, P=20,midx=400):
 &lt;!--  align='center' 為水平置中 ，valign="middle" 為垂直置中 --&gt;
 &lt;br /&gt;
 
-&lt;font size="4" font face="微軟正黑體"&gt;&lt;b&gt;40223104 林瑩禎 課程練習&lt;/b&gt;&lt;/font&gt;&lt;br&gt;
-&lt;a href="https://github.com/40223104/2015cd_0512" title="github"&gt;github&lt;/a&gt;&lt;br&gt;
+&lt;font size="4" font face="微軟正黑體"&gt;&lt;b&gt;40223104 林瑩禎 課程練習&lt;/b&gt;&lt;/font&gt;&lt;br /&gt;
+&lt;a href="https://github.com/40223104/2015cd_0512" title="github"&gt;github&lt;/a&gt;&lt;br /&gt;
 &lt;a href="https://www.gitbook.com/book/40223131/2015cdag2_0421/edit#/edit/master/SUMMARY.md" title="gitbook"&gt;gitbook&lt;/a&gt;&lt;br&gt;
 &lt;br /&gt;
 
-&lt;font size="4" font face="微軟正黑體"&gt;&lt;b&gt;cda_g2_w11 練習&lt;/b&gt;&lt;/font&gt;&lt;br&gt;
+&lt;font size="4" font face="微軟正黑體"&gt;&lt;b&gt;cda_g2_w11 練習&lt;/b&gt;&lt;/font&gt;&lt;br /&gt;
 &lt;form method=POST action=index&gt;
 &lt;a href="spur"&gt;spur&lt;/a&gt;&lt;br /&gt;
 &lt;a href="drawspur"&gt;drawspur&lt;/a&gt;&lt;br /&gt;
@@ -1885,6 +1885,8 @@ def spur(self, N=20 , M=5, P=15):
 &lt;form method=POST action=spuraction&gt;
 齒數:&lt;select name = "N"&gt;
 &lt;option value="20"&gt;20&lt;/option&gt;
+&lt;option value="22"&gt;22&lt;/option&gt;
+&lt;option value="24"&gt;24&lt;/option&gt;
 &lt;option value="25"&gt;25&lt;/option&gt;
 &lt;option value="30"&gt;30&lt;/option&gt;
 &lt;option value="35"&gt;35&lt;/option&gt;

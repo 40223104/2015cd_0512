@@ -139,12 +139,12 @@ class Midterm(object):
     <!--  align='center' 為水平置中 ，valign="middle" 為垂直置中 -->
     <br />
 
-    <font size="4" font face="微軟正黑體"><b>40223104 林瑩禎 課程練習</b></font><br>
-    <a href="https://github.com/40223104/2015cd_0512" title="github">github</a><br>
+    <font size="4" font face="微軟正黑體"><b>40223104 林瑩禎 課程練習</b></font><br />
+    <a href="https://github.com/40223104/2015cd_0512" title="github">github</a><br />
     <a href="https://www.gitbook.com/book/40223131/2015cdag2_0421/edit#/edit/master/SUMMARY.md" title="gitbook">gitbook</a><br>
     <br />
 
-    <font size="4" font face="微軟正黑體"><b>cda_g2_w11 練習</b></font><br>
+    <font size="4" font face="微軟正黑體"><b>cda_g2_w11 練習</b></font><br />
     <form method=POST action=index>
     <a href="spur">spur</a><br />
     <a href="drawspur">drawspur</a><br />
@@ -179,6 +179,8 @@ class Midterm(object):
     <form method=POST action=spuraction>
     齒數:<select name = "N">
     <option value="20">20</option>
+    <option value="22">22</option>
+    <option value="24">24</option>
     <option value="25">25</option>
     <option value="30">30</option>
     <option value="35">35</option>
