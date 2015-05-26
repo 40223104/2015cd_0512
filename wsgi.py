@@ -105,13 +105,7 @@ class Midterm(object):
     <html>
     <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    <!-- 載入 brython.js -->
-    <script type="text/javascript" src="/static/Brython3.1.1-20150328-091302/brython.js"></script>
-    <script src="/static/Cango2D.js" type="text/javascript"></script>
-    <script src="/static/gearUtils-04.js" type="text/javascript"></script>
-    </head>
-    <!-- 啟動 brython() -->
-    <body onload="brython()">
+
     <font size="6" font color="#00A800" font face="微軟正黑體">cda_g2 課程練習</font><br>
     <br>
     <font size="4" font face="微軟正黑體"><b>組員名單</b></font><br>
@@ -156,6 +150,7 @@ class Midterm(object):
     <form method=POST action=index>
     <a href="man">man</a><br />
     <a href="man2">man2</a><br />
+
 
     '''
         return outstring

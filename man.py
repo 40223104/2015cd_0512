@@ -33,7 +33,8 @@ class MAN(object):
 <head>
 <meta http-equiv="content-type" content="text/html;charset=utf-8">
 <script type="text/javascript" src="/static/weblink/examples/jscript/pfcUtils.js"></script>
-<script type="text/javascript" src="/static/weblink/examples/jscript/wl_header.js"></script>
+<script type="text/javascript" src="/static/weblink/pfcUtils.js"></script>
+<script type="text/javascript" src="/static/weblink/wl_header.js"></script>
 </head>
 <body>
 </script><script language="JavaScript">

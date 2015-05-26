@@ -1772,13 +1772,7 @@ def index(self, N=20 ,N1=20 , M=4, P=20,midx=400):
 &lt;html&gt;
 &lt;head&gt;
 &lt;meta http-equiv="content-type" content="text/html;charset=utf-8"&gt;
-&lt;!-- 載入 brython.js --&gt;
-&lt;script type="text/javascript" src="/static/Brython3.1.1-20150328-091302/brython.js"&gt;&lt;/script&gt;
-&lt;script src="/static/Cango2D.js" type="text/javascript"&gt;&lt;/script&gt;
-&lt;script src="/static/gearUtils-04.js" type="text/javascript"&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;!-- 啟動 brython() --&gt;
-&lt;body onload="brython()"&gt;
+
 &lt;font size="6" font color="#00A800" font face="微軟正黑體"&gt;cda_g2 課程練習&lt;/font&gt;&lt;br&gt;
 &lt;br&gt;
 &lt;font size="4" font face="微軟正黑體"&gt;&lt;b&gt;組員名單&lt;/b&gt;&lt;/font&gt;&lt;br&gt;
@@ -1823,6 +1817,7 @@ def index(self, N=20 ,N1=20 , M=4, P=20,midx=400):
 &lt;form method=POST action=index&gt;
 &lt;a href="man"&gt;man&lt;/a&gt;&lt;br /&gt;
 &lt;a href="man2"&gt;man2&lt;/a&gt;&lt;br /&gt;
+
 
 '''
     return outstring
